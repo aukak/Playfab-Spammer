@@ -1,8 +1,8 @@
 /* styles.css */
 
-/* Apply general styles for the whole page */
+/* General page styles */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: Arial, sans-serif;
     background-color: #f5f5f5;
     margin: 0;
     padding: 0;
@@ -12,61 +12,46 @@ body {
     height: 100vh;
 }
 
-/* Container for the form */
-.container {
+/* Form styles */
+form {
     background-color: white;
-    padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
-    width: 300px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 250px;
     text-align: center;
 }
 
-/* Style for the heading */
+/* Heading */
 h1 {
-    font-size: 24px;
-    margin-bottom: 20px;
+    font-size: 20px;
+    margin-bottom: 15px;
     color: #333;
 }
 
-/* Style for the form inputs */
+/* Input field */
 input[type="text"] {
     width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
+    padding: 8px;
+    margin-bottom: 15px;
     border: 1px solid #ccc;
-    border-radius: 5px;
-    box-sizing: border-box;
-    font-size: 16px;
-    color: #555;
+    border-radius: 3px;
+    font-size: 14px;
 }
 
-/* Style for the submit button */
+/* Submit button */
 button[type="submit"] {
     width: 100%;
     padding: 10px;
     background-color: #5cb85c;
     color: white;
     border: none;
-    border-radius: 5px;
-    font-size: 16px;
+    border-radius: 3px;
+    font-size: 14px;
     cursor: pointer;
 }
 
-/* Button hover effect */
+/* Hover effect for button */
 button[type="submit"]:hover {
     background-color: #4cae4c;
-}
-
-/* Add focus effect to input fields */
-input[type="text"]:focus {
-    border-color: #5cb85c;
-    outline: none;
-}
-
-/* Mobile responsive tweaks */
-@media (max-width: 600px) {
-    .container {
-        width: 90%;
-    }
 }
