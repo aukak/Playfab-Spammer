@@ -1,17 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
+<!-- templates/index.html -->
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PlayFab Spammer</title>
+    <title>PLayfab Spammer</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
 </head>
 <body>
-    <h1>PlayFab Spammer</h1>
-    <form action="/spam" method="POST">
-        <label for="titleId">Title ID:</label>
-        <input type="text" id="titleId" name="titleId" required>
-        <button type="submit">Start Spamming</button>
-    </form>
+    <div class="container">
+        <h1>TITLE ID:</h1>
+        <form action="/submit" method="POST">
+            <input type="text" name="name" placeholder="Enter Title ID" required>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
 </body>
 </html>
